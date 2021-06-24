@@ -6,11 +6,17 @@ The following files are included with this sample
 This is the Python script for the Lambda function that needs to be created and associated with the S3 Object Lambda Access Point.
 
 #### s3ol_client.py
-This is Python script to test dynamic file translations using S3 Object Lambda. Run this scrpit from the command-line and pass the code of the target language.  
-Before running this script, make sure you replace the value within the '<>' in line 26 with your own S3 Object Lambda access point ARN.  
-USAGE:   
+This is Python script to test dynamic file translations using S3 Object Lambda. Run this scrpit from the command-line and pass the 2-character code of the target language. The full list of supported languages and codes in Amazon Translate can be found at https://docs.aws.amazon.com/translate/latest/dg/what-is.html. Before running this script, make sure you replace the value within the '<>' in line 26 with your own S3 Object Lambda access point ARN.  
+Usage:   
   s3ol_client.py "Target Language Code"    
   e.g. [joe@192.168.1.10 ~]$ s3ol_client.py "fr"  
+ 
+ #### SAM Template to Deploy and Configure the Lambda Function
+ Also included is a SAM template to deploy and configure the Lambda Functioon. Use the .yml file in "sam-deploy-dynamic-file-translation" to deploy the Lambda function.  
+ For additional information to deploy an application using SAM, please see the tutorial at https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-getting-started-hello-world.html
+ 
+  
+  
 
   ## Security
 
