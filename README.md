@@ -1,7 +1,5 @@
 ## Translating content dynamically using S3 Object Lambda
 
-TODO: Fill this README out!
-
 Be sure to:
 
 * Change the title in this README
