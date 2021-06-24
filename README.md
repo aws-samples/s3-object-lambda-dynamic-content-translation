@@ -1,9 +1,6 @@
 ## Translating content dynamically using S3 Object Lambda
 
-Be sure to:
 
-* Change the title in this README
-* Edit your repository description on GitHub
 
 ## Security
 
