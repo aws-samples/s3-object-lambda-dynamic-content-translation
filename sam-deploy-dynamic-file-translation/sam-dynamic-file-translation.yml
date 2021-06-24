@@ -1,0 +1,28 @@
+AWSTemplateFormatVersion : '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: A SAM template for deploying the DynamicFileTranslation Lambda function.
+
+Globals:
+  Function:
+    Timeout: 15
+    
+Resources:
+  DynamicFileTranslation:
+    Type: AWS::Serverless::Function
+    Properties:
+      Description: Translate files from a source to a target language using Amazon Translate and S3 Object Lambda
+      FunctionName: DynamicFileTranslation
+      Handler: DynamicFileTranslation.handler
+      Runtime: python3.7
+      PackageType: Zip
+
+# Grants this function permission to call S3 and Amazon Translate
+      Policies:
+        - Version: "2012-10-17"
+          Statement: 
+          - Effect: "Allow"
+            Action:              
+              - "s3:GetObject"
+              - "s3-object-lambda:WriteGetObjectResponse"
+              - "translate:*"
+            Resource: '*'
