@@ -10,8 +10,11 @@ This is Python script to test dynamic file translations using S3 Object Lambda. 
 Usage:   
   s3ol_client.py "Target Language Code"    
   e.g. [joe@192.168.1.10 ~]$ s3ol_client.py "fr"  
+  
+#### contact-us.txt  
+This is a sample test file in english that can be used to test dynamic file translation using S3 Object Lambda. Upload this file to the S3 bucket you create corresponding to the S3 Object Lambda Access Point. Translate this file dynamically to any target language using the test client script.
  
- #### SAM Template to Deploy and Configure the Lambda Function
+#### SAM Template to Deploy and Configure the Lambda Function
  Also included is a SAM template to deploy and configure the Lambda Functioon. Use the .yml file in "sam-deploy-dynamic-file-translation" to deploy the Lambda function.  
  For additional information to deploy an application using SAM, please see the tutorial at https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-getting-started-hello-world.html
  
