@@ -1,6 +1,6 @@
 ## Translating content dynamically using S3 Object Lambda
 
-
+### The following files are included with this sample
 
 ## Security
 
