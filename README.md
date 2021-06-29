@@ -2,7 +2,7 @@
 
 The following files are included with this sample
 
-#### DynamicFileTranslation-Lambda.py
+#### DynamicFileTranslation.py
 This is the Python script for the Lambda function that needs to be created and associated with the S3 Object Lambda Access Point.
 
 #### s3ol_client.py
