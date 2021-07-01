@@ -26,8 +26,8 @@ Resources:
               - "s3-object-lambda:WriteGetObjectResponse"
             Resource: 
               - "*"
-# For additional security, you may scope down S3 resource by replacing values within the <> 
-#             - "<arn of your S3 access point/*>î,
+# For additional security, you should scope down S3 resource by replacing values within the <> 
+#             - "<arn of your S3 access point/*>‚Äù,
 #             - "<arn of your Object Lambda accesspoint>"
           - Effect: "Allow"
             Action:
