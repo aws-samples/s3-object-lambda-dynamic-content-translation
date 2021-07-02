@@ -1,6 +1,10 @@
 ## Translating content dynamically by using Amazon S3 Object Lambda
 
-The following files are included with this sample
+The recent launch of Amazon S3 Object Lambda creates many possibilities to transform data in S3 buckets dynamically. S3 Object Lambda can be used with other AWS serverless services to transform content stored in S3 in many creative ways. One example is using S3 Object Lambda with Amazon Translate to translate and serve content from S3 buckets on demand. 
+
+Using S3 Object Lambda with Amazon Translate, you do not need to translate content in advance for all possible permutations of source to target languages. Instead, you can transform content in near-real time using a data driven model. This can serve multiple language-specific applications simultaneously. 
+
+The files included in this sample can be used to build a simple data driven application to dynamically translate content from a source language to a target language using S3 Object Lambda
 
 #### DynamicFileTranslation.py
 This is the Python script for the Lambda function. Use this code to create your Lambda function and associate it with the S3 Object Lambda Access Point.
